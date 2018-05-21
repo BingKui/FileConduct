@@ -1,0 +1,26 @@
+{
+  "name": "fileconduct",
+  "version": "1.0.0",
+  "description": "处理文件，保存数据",
+  "main": "poem.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BingKui/FileConduct.git"
+  },
+  "keywords": [
+    "mongodb",
+    "nodejs"
+  ],
+  "author": "康兵奎",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BingKui/FileConduct/issues"
+  },
+  "homepage": "https://github.com/BingKui/FileConduct#readme",
+  "dependencies": {
+    "mongolass": "^4.3.0"
+  }
+}
