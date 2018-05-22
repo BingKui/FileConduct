@@ -2,7 +2,7 @@ let Poem = require('../model/poem');
 
 module.exports = {
 	addOneItem: (item) => {
-		return Poem.create(item).exec();
+		return Poem.create(item).exec().catch(console.error);
 	},
 	updateOneById: (id, data) => {
 		return Poem.update({
