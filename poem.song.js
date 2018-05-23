@@ -29,6 +29,9 @@ const fileRead = (path, callback) => {
 const dealData = (data) => {
     const _data = JSON.parse(data);
     _data.map(item => {
+        if (item.title.length > 10 || item.paragraphs.length !== 4) {
+            return;
+        }
         console.log(`添加==>${item.title}...`);
         PoemController.addOneItem(item);
     });
