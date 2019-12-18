@@ -12,13 +12,17 @@ const dealPoet = () => {
 const forLoop = (max, name) => {
     for (let i = 0; i <= max; i+= 1000) {
         (() => {
-            setTimeout(() => {
-                const _file = `./file/poet.${name}.${i}.json`;
-                fileRead(_file, (err, data) => {
-                    if (err) throw err;
-                    dealData(data);
-                });
-            }, i);
+            const _file = `./file/poet.${name}.${i}.json`;
+            if (fs.existsSync(_file)) {
+                setTimeout(() => {
+                    fileRead(_file, (err, data) => {
+                        if (err) throw err;
+                        dealData(data);
+                    });
+                }, i);
+            } else {
+                console.log('执行完成');
+            }
         })(i, name);
     }
 }
