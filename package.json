@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/BingKui/FileConduct#readme",
   "dependencies": {
-    "mongolass": "^4.3.0"
+    "mongolass": "^4.4.7"
   }
 }
